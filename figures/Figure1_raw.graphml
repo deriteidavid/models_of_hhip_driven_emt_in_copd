@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d0" for="node" attr.name="label" attr.type="string"/>
+<graph edgedefault="directed"><node id="GLI">
+  <data key="d0">GLI</data>
+</node>
+<node id="HHIP">
+  <data key="d0">HHIP</data>
+</node>
+<node id="SHH">
+  <data key="d0">SHH</data>
+</node>
+<node id="Patched">
+  <data key="d0">Patched</data>
+</node>
+<node id="SMO">
+  <data key="d0">SMO</data>
+</node>
+<node id="SUFU">
+  <data key="d0">SUFU</data>
+</node>
+<node id="SNAI1">
+  <data key="d0">SNAI1</data>
+</node>
+<node id="SNAI2">
+  <data key="d0">SNAI2</data>
+</node>
+<node id="ZEB1">
+  <data key="d0">ZEB1</data>
+</node>
+<node id="B_catenin_TCF4">
+  <data key="d0">B_catenin_TCF4</data>
+</node>
+<node id="miR_200">
+  <data key="d0">miR_200</data>
+</node>
+<node id="AJ">
+  <data key="d0">AJ</data>
+</node>
+<node id="B_catenin_nuc">
+  <data key="d0">B_catenin_nuc</data>
+</node>
+<node id="miR_34">
+  <data key="d0">miR_34</data>
+</node>
+<node id="LEF1">
+  <data key="d0">LEF1</data>
+</node>
+<node id="NFKB">
+  <data key="d0">NFKB</data>
+</node>
+<node id="TWIST1">
+  <data key="d0">TWIST1</data>
+</node>
+<node id="TGFb_secr">
+  <data key="d0">TGFb_secr</data>
+</node>
+<node id="E_cadherin">
+  <data key="d0">E_cadherin</data>
+</node>
+<node id="RAC1">
+  <data key="d0">RAC1</data>
+</node>
+<node id="PAK1">
+  <data key="d0">PAK1</data>
+</node>
+<node id="Migration">
+  <data key="d0">Migration</data>
+</node>
+<node id="Damage">
+  <data key="d0">Damage</data>
+</node>
+<node id="dense_neighborhood">
+  <data key="d0">dense_neighborhood</data>
+</node>
+<edge source="GLI" target="HHIP"/>
+<edge source="GLI" target="SNAI1"/>
+<edge source="GLI" target="SNAI2"/>
+<edge source="GLI" target="ZEB1"/>
+<edge source="GLI" target="Patched"/>
+<edge source="HHIP" target="SHH"/>
+<edge source="SHH" target="Patched"/>
+<edge source="Patched" target="SMO"/>
+<edge source="SMO" target="SUFU"/>
+<edge source="SUFU" target="GLI"/>
+<edge source="SNAI1" target="miR_34"/>
+<edge source="SNAI1" target="ZEB1"/>
+<edge source="SNAI1" target="TWIST1"/>
+<edge source="SNAI1" target="B_catenin_TCF4"/>
+<edge source="SNAI1" target="miR_200"/>
+<edge source="SNAI1" target="E_cadherin"/>
+<edge source="SNAI1" target="SNAI1"/>
+<edge source="SNAI2" target="ZEB1"/>
+<edge source="SNAI2" target="B_catenin_TCF4"/>
+<edge source="SNAI2" target="E_cadherin"/>
+<edge source="ZEB1" target="miR_34"/>
+<edge source="ZEB1" target="miR_200"/>
+<edge source="ZEB1" target="E_cadherin"/>
+<edge source="B_catenin_TCF4" target="ZEB1"/>
+<edge source="B_catenin_TCF4" target="TGFb_secr"/>
+<edge source="miR_200" target="ZEB1"/>
+<edge source="miR_200" target="B_catenin_nuc"/>
+<edge source="miR_200" target="TGFb_secr"/>
+<edge source="miR_200" target="RAC1"/>
+<edge source="AJ" target="B_catenin_nuc"/>
+<edge source="B_catenin_nuc" target="SNAI2"/>
+<edge source="B_catenin_nuc" target="B_catenin_TCF4"/>
+<edge source="miR_34" target="B_catenin_nuc"/>
+<edge source="miR_34" target="LEF1"/>
+<edge source="miR_34" target="SNAI1"/>
+<edge source="miR_34" target="TWIST1"/>
+<edge source="miR_34" target="RAC1"/>
+<edge source="LEF1" target="ZEB1"/>
+<edge source="NFKB" target="LEF1"/>
+<edge source="NFKB" target="TWIST1"/>
+<edge source="NFKB" target="SHH"/>
+<edge source="NFKB" target="SNAI1"/>
+<edge source="TWIST1" target="SNAI2"/>
+<edge source="TWIST1" target="E_cadherin"/>
+<edge source="E_cadherin" target="AJ"/>
+<edge source="E_cadherin" target="Migration"/>
+<edge source="RAC1" target="PAK1"/>
+<edge source="PAK1" target="SNAI1"/>
+<edge source="PAK1" target="Migration"/>
+<edge source="Damage" target="NFKB"/>
+<edge source="dense_neighborhood" target="AJ"/>
+</graph></graphml>
