@@ -1,0 +1,46 @@
+Chart 0:
+Pulse 0:
+Hedgehog:
+SHH_OFF, 1.0
+SHH_Basal, 0.0
+SHH_ON, 0.0
+EMT:
+Epithelial, 1.0
+Hybrid_EM, 0.0
+Mesenchymal, 0.0
+Cell_Cycle_Process:
+Quiescence, 1.0
+CellCycle, 0.0
+Apoptotic_SW:
+Survival, 1.0
+Apoptosis, 0.0
+Pulse 1:
+Hedgehog:
+SHH_OFF, 0.55
+SHH_Basal, 0.34
+SHH_ON, 0.0
+EMT:
+Epithelial, 0.23
+Hybrid_EM, 0.56
+Mesenchymal, 0.0
+Cell_Cycle_Process:
+Quiescence, 0.66
+CellCycle, 0.34
+Apoptotic_SW:
+Survival, 1.0
+Apoptosis, 0.0
+Pulse 2:
+Hedgehog:
+SHH_OFF, 1.0
+SHH_Basal, 0.0
+SHH_ON, 0.0
+EMT:
+Epithelial, 0.7666666666666667
+Hybrid_EM, 0.13333333333333333
+Mesenchymal, 0.0
+Cell_Cycle_Process:
+Quiescence, 1.0
+CellCycle, 0.0
+Apoptotic_SW:
+Survival, 1.0
+Apoptosis, 0.0
