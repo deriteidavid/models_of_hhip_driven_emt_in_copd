@@ -16,8 +16,16 @@ A genetic variant near HHIP has been consistently identified as associated with 
 This section describes how to reproduce each Figure/Result from our paper. 
 * For Figures 3, 4, S1, S2, S3, S4, S5 you'll need to install the Haskell software *dynmod* available at https://github.com/Ravasz-Regan-Group/dynmod.
 * Figure 6 uses data that is publicly available but it's not uploaded to this repository.
+* The → in the table represents *code* → *generated output file*
+* Unless otherwise specified the code should be ran using Jupyter Notebook or Ipython
+* It is sufficient to run each unique *dynmod* command only once, it will generate all the necessary files.
 
 |Figure | How to reproduce | Final figure location| 
 |---|---|---|
 | Graphical abstract | https://www.biorender.com/; License and invoice location: /Paper_Figures/graphical_abstract_biorender/ |/Paper_Figures/graphical abstract.png(pdf.) |
 |Figure 1|Figure1_automation.ipynb → /models_of_hhip_driven_emt_in_copd/figures/Figure1_raw.graphml; <br> manually edited using yED (3.21) based on data compiled in Supplementary Table 1 (interactions); <br> Edited graphml location: /network_figures/Figure1.graphml; | /Paper_Figures/Figure1.png(.pdf) |
+|Figure 2|HHIP_EMT_dynamical_figures_Figure2.ipynb → /models_of_hhip_driven_emt_in_copd/figures/Figure2.png(.pdf) |/Paper_Figures/Figure2.png(.pdf)|
+|Figure 3| within dynmod_model/ run:  *dynmod COPD_EMT_CellCycle_Apoptosis.dmms -g* → dynmod_model/COPD_EMT_CellCycle_Apoptosis.gml <br> manually edited using yED (3.21) and Keynote;<br>files location: /network_figures/Figure3/*|/Paper_Figures/Figure3.(pdf, .key)|
+|Figure 4| within dynmod_model/ run:  *dynmod COPD_EMT_CellCycle_Apoptosis.dmms -e COPD_Figures.vex* → <br> **A**: dynmod_model/_EXP/General_Time_Series/Fig_4A_WT_AV_short/NodeTC/bc12101221211_Fig_4A_WT_AV_short.pdf <br> **B**: dynmod_model/_EXP/General_Time_Series/Fig_4B_HHIP_Haplo_AV_short/NodeTC/bc12101221211_Fig_4B_HHIP_Haplo_AV_short.pdf <br> **C**: dynmod_model/_EXP/General_Time_Series/Fig_4C_WT_Time/PhBCh/bc12101221211_Fig_4C_WT_Time.pdf (top middle panel)<br>dynmod_model/_EXP/General_Time_Series/Fig_4C_HHIP_Haplo_Time/PhBCh/bc12101221211_Fig_4C_HHIP_Haplo_Time.pdf (top middle panel)<br>dynmod_model/_EXP/General_Time_Series/Fig_4C_HHIP_KO_Time/PhBCh/bc12101221211_Fig_4C_HHIP_KO_Time.pdf (top middle panel)<br> manually cropped for manuscript | /Paper_Figures/Figure4.pdf
+|Figure 5| **A**: manually edited from raw photos; /scratch_assay_docs/Figure5A.pptx (.png, .pdf)<br> **B**: qPCR_results_analysis.ipynb → /models_of_hhip_driven_emt_in_copd/figures/Figure5B.png(.pdf) |/Paper_Figures/Figure5.pptx| 
+|Figure 6| **Data not uploaded to repository.** See https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE136831 for COPD Atlas Data (single cell RNA-Seq). <br>  **A** /RNA_Seq_analysis/LTRC_analysis.ipynb → /RNA_Seq_analysis/figures/Figure6A.png(.pdf); <br>/ RNA_Seq_analysis/Kaminski_single_cell_analysis.ipynb → /RNA_Seq_analysis/figures/Figure6B.png <br> | /Paper_Figures/Figure6A.png (.pdf)<br> /Paper_Figures/Figure6B.png (.pdf) 
