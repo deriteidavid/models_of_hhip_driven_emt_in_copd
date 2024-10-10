@@ -11,3 +11,13 @@ A genetic variant near HHIP has been consistently identified as associated with 
 * Cubewalkers: https://github.com/jcrozum/cubewalkers  (requires Nvidia GPU and cuda)
 * AEON.py: https://github.com/sybila/biodivine-aeon-py
 * pystablemotifs: https://github.com/jcrozum/pystablemotifs  
+
+## Documentation
+This section describes how to reproduce each Figure/Result from our paper. 
+* For Figures 3, 4, S1, S2, S3, S4, S5 you'll need to install the Haskell software *dynmod* available at https://github.com/Ravasz-Regan-Group/dynmod.
+* Figure 6 uses data that is publicly available but it's not uploaded to this repository.
+
+|Figure | How to reproduce | Final figure location| 
+|---|---|---|
+| Graphical abstract | https://www.biorender.com/; License and invoice location: /Paper_Figures/graphical_abstract_biorender/ |/Paper_Figures/graphical abstract.png(pdf.) |
+|Figure 1|Figure1_automation.ipynb → /models_of_hhip_driven_emt_in_copd/figures/Figure1_raw.graphml; <br> manually edited using yED (3.21) based on data compiled in Supplementary Table 1 (interactions); <br> Edited graphml location: /network_figures/Figure1.graphml; | /Paper_Figures/Figure1.png(.pdf) |
