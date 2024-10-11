@@ -1,4 +1,4 @@
-This repository contains code to reproduce some of the key results of our paper entitled: <br>
+This repository contains code to reproduce the key results of our paper entitled: <br>
 # HHIP’s Dynamic Role in Epithelial Wound Healing Reveals a Potential Mechanism of COPD Susceptibility
 available on bioRxiv: https://www.biorxiv.org/content/10.1101/2024.09.05.611545v1.abstract 
 
@@ -13,7 +13,7 @@ A genetic variant near HHIP has been consistently identified as associated with 
 * pystablemotifs: https://github.com/jcrozum/pystablemotifs  
 
 ## Documentation
-This section describes how to reproduce each Figure/Result from our paper. 
+This section describes how to reproduce each figure/result from our paper. 
 * For Figures 3, 4, S1, S2, S3, S4, S5 you'll need to install the Haskell software *dynmod* available at https://github.com/Ravasz-Regan-Group/dynmod.
 * Figure 6 uses data that is publicly available but it's not uploaded to this repository.
 * The → in the table represents *code* → *generated output file*
@@ -28,4 +28,4 @@ This section describes how to reproduce each Figure/Result from our paper.
 |Figure 3| within dynmod_model/ run:  *dynmod COPD_EMT_CellCycle_Apoptosis.dmms -g* → dynmod_model/COPD_EMT_CellCycle_Apoptosis.gml <br> manually edited using yED (3.21) and Keynote;<br>files location: /network_figures/Figure3/*|/Paper_Figures/Figure3.(pdf, .key)|
 |Figure 4| within dynmod_model/ run:  *dynmod COPD_EMT_CellCycle_Apoptosis.dmms -e COPD_Figures.vex* → <br> **A**: dynmod_model/_EXP/General_Time_Series/Fig_4A_WT_AV_short/NodeTC/bc12101221211_Fig_4A_WT_AV_short.pdf <br> **B**: dynmod_model/_EXP/General_Time_Series/Fig_4B_HHIP_Haplo_AV_short/NodeTC/bc12101221211_Fig_4B_HHIP_Haplo_AV_short.pdf <br> **C**: dynmod_model/_EXP/General_Time_Series/Fig_4C_WT_Time/PhBCh/bc12101221211_Fig_4C_WT_Time.pdf (top middle panel)<br>dynmod_model/_EXP/General_Time_Series/Fig_4C_HHIP_Haplo_Time/PhBCh/bc12101221211_Fig_4C_HHIP_Haplo_Time.pdf (top middle panel)<br>dynmod_model/_EXP/General_Time_Series/Fig_4C_HHIP_KO_Time/PhBCh/bc12101221211_Fig_4C_HHIP_KO_Time.pdf (top middle panel)<br> manually cropped for manuscript | /Paper_Figures/Figure4.pdf
 |Figure 5| **A**: manually edited from raw photos; /scratch_assay_docs/Figure5A.pptx (.png, .pdf)<br> **B**: qPCR_results_analysis.ipynb → /models_of_hhip_driven_emt_in_copd/figures/Figure5B.png(.pdf) |/Paper_Figures/Figure5.pptx| 
-|Figure 6| **Data not uploaded to repository.** See https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE136831 for COPD Atlas Data (single cell RNA-Seq). <br>  **A**: /RNA_Seq_analysis/LTRC_analysis.ipynb → /RNA_Seq_analysis/figures/Figure6A.png(.pdf); <br> **B**: /RNA_Seq_analysis/Kaminski_single_cell_analysis.ipynb → /RNA_Seq_analysis/figures/Figure6B.png <br> | /Paper_Figures/Figure6A.png (.pdf)<br> /Paper_Figures/Figure6B.png (.pdf) 
+|Figure 6| **Data not uploaded to repository.** For details on LTRC see https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001662.v3.p1 and/or contact authors<br> COPD Atlas Data (single cell RNA-Seq) is available at  https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE136831. <br>  **A**: /RNA_Seq_analysis/LTRC_analysis.ipynb → /RNA_Seq_analysis/figures/Figure6A.png(.pdf); <br> **B**: /RNA_Seq_analysis/Kaminski_single_cell_analysis.ipynb → /RNA_Seq_analysis/figures/Figure6B.png <br> | /Paper_Figures/Figure6A.png (.pdf)<br> /Paper_Figures/Figure6B.png (.pdf) 
